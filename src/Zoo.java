@@ -9,7 +9,6 @@ public class Zoo {
    * @param list list of birds of particular type.
    */
   public static void feed(List list) {
-                                                                         // TODO fix method declaration
     ArrayList<String> strings = new ArrayList<String>();
     strings.add("Eagle");
     strings.add("Kiwi");
@@ -27,11 +26,15 @@ public class Zoo {
    * @param bird a new bird.
    */
   public static void acceptBird(List list, FlyingBird bird) {
-                                                                          // TODO fix method declaration
+    // TODO fix method declaration
     System.out.println("Accepting a bird to a section");
-    // TODO check flying bird wings
+                                                            // TODO check flying bird wings
     bird.checkWings();
     // TODO add a bird to the list and print it
+    List<FlyingBird> birds = new ArrayList<>();
+
+    System.out.println(list);
+
   }
 
   /**
