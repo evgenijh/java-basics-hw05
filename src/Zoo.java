@@ -8,12 +8,14 @@ public class Zoo {
             System.out.println(bird);
         }
     }
+
     public static void acceptBird(List<? super FlyingBird> list, FlyingBird bird) {
         System.out.println("Accepting a bird to a section");
         bird.checkWings();
         list.add(bird);
         System.out.println(bird);
     }
+
     public static void registerBird(List<Bird> list, Bird newBird) {
         System.out.println("Adding a bird to the birds list");
         list.add(newBird);
